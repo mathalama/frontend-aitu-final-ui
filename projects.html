@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Projects | Mathalama</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Mathalama</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button
+                id="theme-toggle"
+                class="nav-link btn btn-link"
+                aria-label="Toggle theme"
+                title="Toggle theme"
+              ></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="mb-0">Projects</h2>
+          <div>
+            <button
+              class="btn btn-outline-primary btn-sm filter-btn"
+              data-filter="all"
+            >
+              All
+            </button>
+            <button
+              class="btn btn-outline-primary btn-sm filter-btn"
+              data-filter="java"
+            >
+              Java
+            </button>
+            <button
+              class="btn btn-outline-primary btn-sm filter-btn"
+              data-filter="frontend"
+            >
+              Frontend
+            </button>
+          </div>
+        </div>
+
+        <div class="row g-4" id="projectList">
+          <div class="col-md-4 project-item frontend">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="assets/images/1.png"
+                class="card-img-top"
+                alt="Portfolio"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Portfolio Website</h5>
+                <p class="card-text panel-subtext">
+                  Modern responsive portfolio using HTML, CSS, Bootstrap,
+                  jQuery.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-item java">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="assets/images/2.png"
+                class="card-img-top"
+                alt="Graphs"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Graph Algorithms (DAA-4)</h5>
+                <p class="card-text panel-subtext">
+                  Tarjan SCC, Kahn topological sort, DAG shortest path, metrics
+                  output.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-item java">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="assets/images/3.png"
+                class="card-img-top"
+                alt="Task manager"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Task Manager API</h5>
+                <p class="card-text panel-subtext">
+                  Backend API built with Go, PostgreSQL, Redis. Handles projects
+                  and tasks.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-item frontend">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="assets/images/4.png"
+                class="card-img-top"
+                alt="UI components"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Interactive UI Components</h5>
+                <p class="card-text panel-subtext">
+                  jQuery-based sliders, modals, and forms for modern UX.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-item frontend">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="assets/images/5.jpg"
+                class="card-img-top"
+                alt="Mathalama app"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mathalama Learning App</h5>
+                <p class="card-text panel-subtext">
+                  Prototype e-learning web app using Bootstrap and JS animation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-item java">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="assets/images/6.png"
+                class="card-img-top"
+                alt="Spring REST"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Spring REST Service</h5>
+                <p class="card-text panel-subtext">
+                  Java Spring Boot API for task management and data analysis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p class="mb-0">&copy; 2025 Aikyn Sagyntai. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/api-config.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

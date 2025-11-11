@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home | Mathalama</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Mathalama</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button
+                id="theme-toggle"
+                class="nav-link btn btn-link"
+                aria-label="Toggle theme"
+                title="Toggle theme"
+              >
+                <!-- moon then sun (JS may toggle data-theme to show correct one) -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="theme-icon icon-moon"
+                  fill="currentColor"
+                >
+                  <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="theme-icon icon-sun"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.8 1.42-1.42zM1 13h3v-2H1v2zm10-9h2V1h-2v3zm7.66 2.05l1.41-1.41-1.79-1.8-1.42 1.42 1.8 1.79zM17 13h3v-2h-3v2zM12 6a6 6 0 100 12 6 6 0 000-12zm0 10a4 4 0 110-8 4 4 0 010 8zm-1 5h2v3h-2v-3zM4.24 19.16l1.8 1.79 1.41-1.41-1.79-1.8-1.42 1.42zM18.36 19.16l1.42-1.42-1.8-1.79-1.41 1.41 1.79 1.8z"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero" class="hero section-pad reveal fade-in">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <span class="section-label d-inline-block mb-3"
+                >Java Backend Developer</span
+              >
+              <h1 class="hero-title mb-3">
+                Building reliable systems, one service at a time
+              </h1>
+              <p class="hero-lead">
+                Second-year Software Engineering student at Astana IT
+                University. Focused on Java, Spring Boot, and scalable backend
+                architecture.
+              </p>
+              <div class="hero-actions">
+                <a
+                  class="btn btn-primary btn-lg"
+                  href="https://github.com/mathalama"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Explore GitHub
+                </a>
+                <a class="btn btn-outline-light btn-lg" href="#contact">
+                  Get in Touch
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="hero-visual">
+                <pre class="code-snippet mb-0"><code>
+ package dev.mathalama;
+
+ <span class="kw">@SpringBootApplication</span>
+ public class <span class="accent-text">Portfolio</span> {
+   public static void <span class="accent-text">main</span>(String[] args) { 
+     System.out.println(<span class="str">"Hello!"</span>);
+   }
+ }
+          </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="surface-panel border rounded p-4 stats-span-2">
+              <h3 class="mb-3">Current Focus</h3>
+              <p class="panel-subtext mb-0">
+                Building production-ready backend services with Spring Boot and
+                learning microservices architecture
+              </p>
+            </div>
+
+            <div
+              class="surface-panel border rounded p-3 text-center metric-card"
+            >
+              <span class="metric-label d-block mb-2">Years of Study</span>
+              <span
+                class="metric-value fw-bold display-6 counter"
+                data-target="2"
+                >0</span
+              >
+            </div>
+
+            <div
+              class="surface-panel border rounded p-3 text-center metric-card"
+            >
+              <span class="metric-label d-block mb-2">Projects</span>
+              <span
+                class="metric-value fw-bold display-6 counter"
+                data-target="10"
+                >0</span
+              >
+            </div>
+
+            <div class="surface-panel border rounded p-4 stats-span-2">
+              <h3 class="mb-3">Tech Stack</h3>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-secondary">Java</span>
+                <span class="badge bg-secondary">Spring Boot</span>
+                <span class="badge bg-secondary">SQL</span>
+                <span class="badge bg-secondary">Docker</span>
+                <span class="badge bg-secondary">Git</span>
+              </div>
+            </div>
+
+            <div class="surface-panel border rounded p-4 stats-span-2">
+              <h3 class="mb-3">Learning Path</h3>
+              <p class="panel-subtext mb-0">
+                Currently exploring design patterns, CI/CD pipelines, and cloud
+                deployment strategies
+              </p>
+            </div>
+
+            <div
+              class="surface-panel border rounded p-3 text-center stats-span-4"
+            >
+              <span class="metric-label d-block mb-2">GitHub Commits</span>
+              <span
+                class="metric-value fw-bold display-6 counter"
+                data-target="250"
+                >0</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p class="mb-0">&copy; 2025 Aikyn Sagyntai. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/api-config.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
